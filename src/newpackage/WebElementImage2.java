@@ -22,9 +22,7 @@ public class WebElementImage2 {
 		password.click();
 		Thread.sleep(2000);
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		WebElement message = wait.until(
-                ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@class='lfloat']"))
-        );
+		WebElement message = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@class='lfloat']")));
 		WebElement image = driver.findElement(By.xpath("//a[@class='lfloat']"));
 		image.click();
 		Thread.sleep(2000);
